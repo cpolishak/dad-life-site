@@ -50,7 +50,7 @@ const Main: React.FC = () => {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid item xs={12} sm={5}>
+              <Grid item xs={12} sm={5} pb={2}>
                 <Box
                   sx={{
                     textAlign: "center",
