@@ -15,7 +15,7 @@ const Main: React.FC = () => {
           <Box
             p={3}
             sx={{
-              height: "100vh",
+              // height: "100vh",
               display: "flex",
             }}
           >
@@ -60,7 +60,11 @@ const Main: React.FC = () => {
                   <img
                     src={girlDad}
                     alt="dad raising daughter in air"
-                    style={{ maxHeight: "70vh", maxWidth: "70vw" }}
+                    style={{ 
+                      maxHeight: "65vh", 
+                      maxWidth: "65vw", 
+                      padding: 2,
+                    }}
                   />
                 </Box>
               </Grid>
