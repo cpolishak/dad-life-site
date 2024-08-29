@@ -19,7 +19,7 @@ root.render(
 
           <Route path="/stories" element={<Stories />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/login" element={<Archives />} />
+          <Route path="/login" />
         </Route>
       </Routes>
     </BrowserRouter>
