@@ -15,7 +15,6 @@ const Main: React.FC = () => {
           <Box
             p={3}
             sx={{
-              // height: "100vh",
               display: "flex",
             }}
           >
@@ -42,7 +41,7 @@ const Main: React.FC = () => {
                     The smile of a daughter is the secret purpose of every
                     father. - Unknown
                   </Typography>
-                  <Typography variant="body1" sx={{ px: 2 }}>
+                  <Typography variant="body1" sx={{ px: 2, pb: 3, }}>
                     This is a fictional website that I designed to celebrate the
                     wonders, the joys, and the sillyness that is being a girl
                     dad. It will serve as an example of some website design and

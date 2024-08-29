@@ -83,9 +83,9 @@ export const Footer = () => {
             </Link>
           </Typography>
           <Typography variant="subtitle1">
-          <Link to="/archives" style={aTagStyle}>
-              Archives
-            </Link>
+          {/* <Link to="/login" style={aTagStyle}> */}
+              Login
+            {/* </Link> */}
           </Typography>
         </Grid>{" "}
       </Grid>

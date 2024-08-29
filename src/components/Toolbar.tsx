@@ -13,8 +13,8 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
 
-const pages = ["Stories", "Resources", "Archives"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = ["Stories", "Resources"];
+// const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ToolBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -101,16 +101,15 @@ function ToolBar() {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center" sx={aTagStyle}>
-                  <Link
-                  to={`/${page.toLowerCase()}`}
-                  style={aTagStyle}
-                >
-                  {page}
-                </Link>
-                    {/* {page} */}
+                    <Link to={`/${page.toLowerCase()}`} style={aTagStyle}>
+                      {page}
+                    </Link>
                   </Typography>
                 </MenuItem>
               ))}
+              <MenuItem key="login" onClick={handleCloseNavMenu}>
+                Login
+              </MenuItem>
             </Menu>
           </Box>
           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
@@ -153,15 +152,22 @@ function ToolBar() {
                   display: "block",
                 }}
               >
-                <Link
-                  to={`/${page.toLowerCase()}`}
-                  style={aTagStyle}
-                >
+                <Link to={`/${page.toLowerCase()}`} style={aTagStyle}>
                   {page}
                 </Link>
-                {/* {page} */}
               </Button>
             ))}
+            <Button
+              sx={{
+                my: 2,
+                color: "black",
+                fontSize: "18px",
+                px: 3,
+                display: "block",
+              }}
+            >
+              Login
+            </Button>
           </Box>
 
           {/* <Box sx={{ flexGrow: 0 }}>
