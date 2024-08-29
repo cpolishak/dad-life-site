@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./Main";
 import { Stories } from "./pages/Stories";
 import { Resources } from "./pages/Resources";
-import { Archives } from "./pages/Archives";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
