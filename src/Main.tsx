@@ -49,7 +49,7 @@ const Main: React.FC = () => {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid item xs={12} sm={5} pb={2}>
+              <Grid item xs={12} sm={5} py={2}>
                 <Box
                   sx={{
                     textAlign: "center",
