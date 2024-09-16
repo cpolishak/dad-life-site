@@ -14,12 +14,12 @@ export const Resources: React.FC = () => {
         <Grid container p={4}>
           <Grid item xs={12} py={3}>
             <Typography variant="h3">Resources</Typography>
-            <Typography variant="subtitle1">Every girl dad needs some good resources. Find help in loads of different topics.</Typography>
+            <Typography variant="subtitle1">Every girl dad needs some good resources. Find help in loads of different topics. Coming soon!</Typography>
           </Grid>
           {/* Maybe have a table on this page with links to other fun sites 
           or sites with helpful info / blogs / etc. */}
           <Grid item>
-            Have resources for things like: find other dads in your area, parenting tips blogs, mental health resources, 
+            {/* Have resources for things like: find other dads in your area, parenting tips blogs, mental health resources,  */}
           </Grid>
         </Grid>
       </Box>
