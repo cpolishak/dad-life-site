@@ -107,16 +107,11 @@ const Main: React.FC = () => {
             <Grid container>
               <Grid item xs={12} sm={2}></Grid>
               <Grid item xs={12} sm={8}>
-                <Typography variant="body2" pb={2} sx={{ textAlign: "center" }}>
-                  There is no love you will ever know quite like that of the
-                  love for a daughter.
-                  <br />- Unknown
-                </Typography>
                 <Typography variant="h6" pb={4} sx={{ textAlign: "center" }}>
-                  Perhaps you stumbled across this site, perhaps you came here
-                  seeking some fun new ideas, or maybe you are just wondering
+                  Perhaps you stumbled across this site by accident. Or perhaps you came here
+                  seeking some fun new ideas for you and your daughter to experience. Or maybe you are just wondering
                   how awesome it is to be a girl dad. No matter what brings you
-                  here, we've got you covered.
+                  here, we're glad that you stopped by!
                 </Typography>
                 <Paper
                   sx={dropdownStyle}
