@@ -6,6 +6,40 @@ import MasonryImageList from "./components/MasonryImageList";
 import { Footer } from "./components/Footer";
 
 const Main: React.FC = () => {
+
+  const girlDadImgStyle = { 
+    maxHeight: "65vh", 
+    maxWidth: "65vw", 
+    padding: 2,
+  };
+
+  const dropdownStyle = {
+    p: 3,
+    backgroundColor: "rgb(55, 56, 61)",
+    color: "white",
+  };
+
+  const questionsSectionStyle = {
+    height: "80vh",
+    overflow: "auto",
+    backgroundColor: "white",
+    py: "4rem",
+  };
+
+  const joinStyle = {
+    p: 4,
+    alignContent: "center",
+    textAlign: "center",
+  };
+
+  const joinBtnStyle = {
+    color: "black",
+    backgroundColor: "white",
+    "&:hover": {
+      backgroundColor: "lightgray",
+    },
+  };
+
   return (
     <>
       <ToolBar />
@@ -25,8 +59,7 @@ const Main: React.FC = () => {
                     variant="h2"
                     sx={{
                       pl: 1,
-                      pt: "10%",
-                      pb: 3,
+                      py: 3,
                     }}
                   >
                     Welcome to Girl Dad Life
@@ -59,11 +92,7 @@ const Main: React.FC = () => {
                   <img
                     src={girlDad}
                     alt="dad raising daughter in air"
-                    style={{ 
-                      maxHeight: "65vh", 
-                      maxWidth: "65vw", 
-                      padding: 2,
-                    }}
+                    style={girlDadImgStyle}
                   />
                 </Box>
               </Grid>
@@ -73,12 +102,7 @@ const Main: React.FC = () => {
           {/* Section 2 */}
           <Box
             p={3}
-            sx={{
-              height: "80vh",
-              overflow: "auto",
-              backgroundColor: "white",
-              py: "4rem",
-            }}
+            sx={questionsSectionStyle}
           >
             <Grid container>
               <Grid item xs={12} sm={2}></Grid>
@@ -95,14 +119,10 @@ const Main: React.FC = () => {
                   here, we've got you covered.
                 </Typography>
                 <Paper
-                  sx={{
-                    p: 3,
-                    backgroundColor: "rgb(55, 56, 61)",
-                    color: "white",
-                  }}
+                  sx={dropdownStyle}
                 >
                   <Typography variant="subtitle2" px={2} pb={1}>
-                    Some good questions to consider:{" "}
+                    Here are some common topics we cover:{" "}
                   </Typography>
                   <AccordionList />
                 </Paper>
@@ -121,11 +141,7 @@ const Main: React.FC = () => {
                 item
                 xs={12}
                 sm={4}
-                sx={{
-                  p: 4,
-                  alignContent: "center",
-                  textAlign: "center",
-                }}
+                sx={joinStyle}
               >
                 <Typography variant="h4" py={4}>
                   Join in the fun!
@@ -138,13 +154,7 @@ const Main: React.FC = () => {
                 </Typography>
                 <Button
                   variant="contained"
-                  sx={{
-                    color: "black",
-                    backgroundColor: "white",
-                    "&:hover": {
-                      backgroundColor: "lightgray",
-                    },
-                  }}
+                  sx={joinBtnStyle}
                 >
                   Join the Dad Life Newsletter
                 </Button>

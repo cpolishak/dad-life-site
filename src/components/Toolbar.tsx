@@ -39,6 +39,48 @@ function ToolBar() {
     setAnchorElUser(null);
   };
 
+  const mainPageStyle = {
+    mr: 2,
+    display: { xs: "none", md: "flex" },
+    fontSize: "24px",
+    fontWeight: 700,
+    letterSpacing: ".2rem",
+    color: "black",
+    textDecoration: "none",
+  };
+
+  const mainLinkStyle = {
+    mr: 2,
+    display: { xs: "flex", md: "none" },
+    flexGrow: 1,
+    fontWeight: 700,
+    letterSpacing: ".3rem",
+    color: "inherit",
+    textDecoration: "none",
+  }
+
+  const largeNavStyle = {
+    flexGrow: 1,
+    display: { xs: "none", md: "flex" },
+    justifyContent: "flex-end",
+  };
+
+  const navLinksStyling = {
+    my: 2,
+    color: "black",
+    fontSize: "18px",
+    px: 3,
+    display: "block",
+  };
+
+  const loginBtnStyle = {
+    my: 2,
+    color: "black",
+    fontSize: "18px",
+    px: 3,
+    display: "block",
+  };
+
   const aTagStyle = {
     textDecoration: "none",
     color: "inherit",
@@ -54,16 +96,7 @@ function ToolBar() {
             noWrap
             component="a"
             href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              // fontFamily: 'monospace',
-              fontSize: "24px",
-              fontWeight: 700,
-              letterSpacing: ".2rem",
-              color: "black",
-              textDecoration: "none",
-            }}
+            sx={mainPageStyle}
           >
             Girl Dad Life
           </Typography>
@@ -118,25 +151,12 @@ function ToolBar() {
             noWrap
             component="a"
             href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              // fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
+            sx={mainLinkStyle}
           >
             Girl Dad Life
           </Typography>
           <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "flex-end",
-            }}
+            sx={largeNavStyle}
           >
             {pages.map((page) => (
               <Button
@@ -144,13 +164,7 @@ function ToolBar() {
                 to={`/${page.toLowerCase()}`}
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "black",
-                  fontSize: "18px",
-                  px: 3,
-                  display: "block",
-                }}
+                sx={navLinksStyling}
               >
                 <Link to={`/${page.toLowerCase()}`} style={aTagStyle}>
                   {page}
@@ -158,13 +172,7 @@ function ToolBar() {
               </Button>
             ))}
             <Button
-              sx={{
-                my: 2,
-                color: "black",
-                fontSize: "18px",
-                px: 3,
-                display: "block",
-              }}
+              sx={loginBtnStyle}
             >
               Login
             </Button>

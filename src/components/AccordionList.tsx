@@ -14,12 +14,12 @@ export const AccordionList = () => {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
           id="panel1-header"
+          sx={{ fontWeight: 600 }}
         >
-          What is your favorite thing about being a girl dad?
+          Support resources for girl dads
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          We have a network of resources to set up girl dads for success. From things like new parenting tips to managing mental health, girl dad life has got you covered. 
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -27,12 +27,12 @@ export const AccordionList = () => {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
           id="panel2-header"
+          sx={{ fontWeight: 600 }}
         >
-          Have you ever played dress up or put on makeup with your daughter?
+          Fun stories for ideas and inspiration
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          See the stories page for ideas on loads of things that you can do as a girl dad. Stories can be shared as a way to inspire, inform or just for sheer bragging rights as a girl dad who is crushing it!
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -40,25 +40,21 @@ export const AccordionList = () => {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
           id="panel1-header"
+          sx={{ fontWeight: 600 }}
         >
-          Who is the coolest girl dad that you know?
+          General questions
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          Can I network with other girl dads to seek help or advice?
         </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2-content"
-          id="panel2-header"
-        >
-          Have you gone out for daddy-daughter dates?
-        </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          What other dads are in my area?
+        </AccordionDetails>
+        <AccordionDetails>
+          What's the best part about being a girl dad?
+        </AccordionDetails>
+        <AccordionDetails>
+          ... and more!
         </AccordionDetails>
       </Accordion>
     </Box>
